@@ -1,7 +1,8 @@
 use std::{fs::File, path::PathBuf};
 use structopt::StructOpt;
 
-use crate::{error::SaveError, procedure::Procedure};
+use super::procedure::Procedure;
+use crate::error::SaveError;
 
 ///cli command:  Upload remote local --config
 #[derive(Debug, StructOpt)]

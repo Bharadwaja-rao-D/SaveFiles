@@ -1,3 +1,3 @@
-pub mod opts;
+pub mod client;
 pub mod error;
-pub mod procedure;
+pub mod server;
