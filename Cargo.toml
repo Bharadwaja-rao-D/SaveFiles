@@ -8,4 +8,5 @@ edition = "2021"
 [dependencies]
 structopt = "0.3.26"
 thiserror = "1.0.30"
+tokio = { version = "1.17.0", features = ["full"] }
 xdg = "2.4.1"

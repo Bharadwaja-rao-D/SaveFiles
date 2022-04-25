@@ -5,6 +5,7 @@ use crate::error::SaveError;
 pub enum Procedure {
     Download,
     Upload,
+    List,
     Other,
 }
 
@@ -14,6 +15,7 @@ impl FromStr for Procedure {
         return Ok(match s {
             "download" => Procedure::Download,
             "upload" => Procedure::Upload,
+            "list" => Procedure::List,
             //TODO: Should return an error
             _ => Procedure::Other,
         });
