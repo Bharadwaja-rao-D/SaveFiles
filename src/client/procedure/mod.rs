@@ -1,6 +1,5 @@
-use std::str::FromStr;
-
 use crate::error::SaveError;
+use std::{path::PathBuf, str::FromStr};
 #[derive(Debug)]
 pub enum Procedure {
     Download,
@@ -21,3 +20,10 @@ impl FromStr for Procedure {
         });
     }
 }
+
+pub fn upload(remote: &String, local: &PathBuf) {
+}
+
+pub fn download(remote: &String, local: &PathBuf) {}
+
+pub fn list(remote: &String) {}
